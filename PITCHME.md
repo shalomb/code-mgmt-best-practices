@@ -67,17 +67,17 @@ Branches Dont's
 
 ## IaaC best practices
 
-- Treat all infrastructure as code
+- Treat all infrastructure as code |
 - Allow rollbacks |
-- Use a workflow
-- is a single branch model the best for your team? *Quite unlikely*
-
-<span style="font-size:0.6em; color:gray">Available bottom-left of screen.</span> |
-<span style="font-size:0.6em; color:gray">Start switching themes right now!</span>
+- Use a workflow |
+- is a single branch model the best for your team? *Quite unlikely* |
 
 ---
 
 ## Release management
+<span style="font-size:0.6em; color:gray">Available bottom-left of screen.</span> |
+<span style="font-size:0.6em; color:gray">Start switching themes right now!</span>
+
 
 ---
 
