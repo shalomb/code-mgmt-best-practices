@@ -85,7 +85,6 @@ Branches Dont's
 ### Versioning
 
 Why? Makes communications easier. |
-
 Alice: Hi Ted, We noticed a problem in production ... |
 Ted:   Ok, What version are you using? |
 Alice: Version `13619bd` |
