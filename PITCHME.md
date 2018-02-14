@@ -145,7 +145,7 @@ Publishing change/change-sets
 
 +++?code=src/shell/manifest.yml.ex&lang=yaml
 
-@[2-4](Pinning dependency to a particular commit)
+@[2-7](Pinning dependency to a particular commit)
 
 +++
 
