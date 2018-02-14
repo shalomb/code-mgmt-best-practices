@@ -57,6 +57,12 @@ Branches Dont's
 ## Branching models
 
 - Should support the release management processes
+- what are the important phases of the lifecycle?
+- Can you port groups of related change?
+- How do you do rollbacks?
+- How do you do hotfixes?
+- How should branches be named?
+- What is the lifecycle of a branch?
 
 ---
 
@@ -71,6 +77,7 @@ Branches Dont's
 ---
 
 ## Release management
+
 <span style="font-size:0.6em; color:gray">Available bottom-left of screen.</span> |
 <span style="font-size:0.6em; color:gray">Start switching themes right now!</span>
 
