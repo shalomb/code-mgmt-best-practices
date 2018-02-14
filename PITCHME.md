@@ -34,9 +34,9 @@ See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Fragment-Slides) f
 
 WIP: Branches
 
-- Do:    Mark your merge request as a WIP until you're ready to merge
-- Do:    Make use of private repositories |
-- Don't: Never change published history |
+- <span style="color:#e49436"> Do:   </span> Mark your merge request as a WIP until you're ready to merge
+- <span style="color:#e49436"> Do:   </span> Make use of private repositories |
+- <span style="color:#e49436"> Don't:</span> Never change published history |
 
 ---
 
