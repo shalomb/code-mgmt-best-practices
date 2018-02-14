@@ -52,7 +52,7 @@ Branches Do's
 Branches Dont's
 
 - Work within the GitLab UI |
-- Work on the master branch instead use a ``feature`` branch |
+- Work on the master branch instead use a _feature_ branch |
 - Combine multiple unrelated changes into a single commit |
 - Write commit message titles > 50 chars |
 - Never change published history |
