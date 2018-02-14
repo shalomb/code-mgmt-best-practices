@@ -143,7 +143,7 @@ Publishing change/change-sets
 
 <span style="font-size:0.6em; color:gray">User</span>
 
-+++?code=src/shell/manifest.yaml&lang=yaml
++++?code=src/shell/manifest.yaml
 
 @[2-7](Pinning dependency to a particular commit)
 
