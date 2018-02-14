@@ -57,33 +57,73 @@ Branches Dont's
 
 ## Branching models
 
-Many exist, which to choose for a team requires consideration.
+Branches are small, short-lived.
+Feature selection/integration for release should happen at any time.
+Where does integration happen? Into the production branch?????
+Remember that feature may not be selected for release
+were unrealistic/expensive, too risky, were experiments
+
+Many models exist, which to choose for a team requires consideration.
 
 +++
+
+## Branching models ...
 
 - Should support the release management processes
+- Should support deployments at any time - disaster recovery
+- Should support QA at every stage
 
 +++
 
-- what are the important phases of the lifecycle?
+## Branching models ...
+
+- Consideration: What are the important phases of your delivery lifecycle?
+- Process-mature teams ensure that code goes through gates
+- Feature/spring planning
+- Selected-for-development
+- Selected-for-integration
+- Released-to-testing (integration->regression testing)
+- Released-to-staging
+- Released-to-production
 
 +++
+
+## Branching models ...
 
 - Can you port groups of related change?
+- Can a hotfix (quick and dirty) be formally backported into next release?
+- Can you forward port a feature-in-development to a hotfix?
+- Can you manage all of this one one branch?
+- *Unlikely*
 
 +++
+
+## Branching models ...
 
 - How do you do rollbacks?
+- In code, you deploy from the previous last-known-good-tag.
+- In infrastructure, you need to test the rollback.
 
 +++
+
+## Branching models ...
 
 - How do you do hotfixes?
 
 +++
 
+## Branching models ...
+
 - How should branches be named?
+- master
+- develop
+- feature/31-support-api-logging
+- hotfix/42-fix-api-auth
+- release/v1.2.3
 
 +++
+
+## Branching models ...
 
 - What is the lifecycle of a branch?
 
@@ -92,8 +132,14 @@ Many exist, which to choose for a team requires consideration.
 ## IaaC best practices
 
 - Treat all infrastructure as code |
-- Allow rollbacks |
-- Use a workflow |
+- The code is the authority/source of truth |
+- If the infrastructure tells a different story, a hotfix is needed |
+- Does your codebase tell a story? It should, a healthy one |
+- How do you improve the health of a codebase? |
+- Testing, More Testing, code review, better practices |
+- Allow rollbacks - things can go wrong |
+- Allow for hotfixing and development to happen simulatenously |
+- Use a workflow that supports your release strategy |
 - is a single branch model the best for your team? |
 - *Quite unlikely* |
 
@@ -101,9 +147,14 @@ Many exist, which to choose for a team requires consideration.
 
 ## Release management
 
-<span style="font-size:0.6em; color:gray">Available bottom-left of screen.</span> |
-<span style="font-size:0.6em; color:gray">Start switching themes right now!</span>
+### Release readiness
 
+- Test, test, test - has everything gone green. Really green??
+- Generate release notes - high-level summary of changes
+- Generate a CHANGELOG - what you would want your peers to see
+- Tag your release commit appropriately
+- Deploy from the tag
+- Generate a release notification
 
 ---
 
@@ -626,3 +677,7 @@ Enable auto-slide with custom slide intervals, presentation looping, and RTL flo
 
 ## GO FOR IT.
 ## JUST ADD <span style="color:#e49436; text-transform: none">PITCHME.md</span> ;)
+<span style="font-size:0.6em; color:gray">Available bottom-left of screen.</span> |
+<span style="font-size:0.6em; color:gray">Start switching themes right now!</span>
+
+
