@@ -70,7 +70,8 @@ Branches Dont's
 - Treat all infrastructure as code |
 - Allow rollbacks |
 - Use a workflow |
-- is a single branch model the best for your team? | *Quite unlikely* |
+- is a single branch model the best for your team? |
+- *Quite unlikely* |
 
 ---
 
