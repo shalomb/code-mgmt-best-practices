@@ -40,8 +40,9 @@ Git do's
 
 Branches Do's
 
-- Use private repositories for features-in-dev/experimental
-- Did you know about https://gitlab.tools.in.pan-net.eu/$username? |
+- Use private repositories for features-in-dev/experimental |
+- Did you know about gitlab user repositories?
+- https://gitlab.tools.in.pan-net.eu/$username? |
 - Mark your merge request as a WIP: until you're ready to merge |
 - Write nice commit messages |
 - Make use of smart commits |
