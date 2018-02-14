@@ -32,11 +32,16 @@ See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Fragment-Slides) f
 
 +++
 
-WIP: Branches
+Branches Do's
 
-- <span style="color:#e49436"> Do:   </span> Mark your merge request as a WIP until you're ready to merge
-- <span style="color:#e49436"> Do:   </span> Make use of private repositories |
-- <span style="color:#e49436"> Don't:</span> Never change published history |
+- Use private repositories for features-in-dev/experimental
+- Did you know about https://gitlab.tools.in.pan-net.eu/$username? |
+- Mark your merge request as a WIP until you're ready to merge |
+
+Branches Do's
+
+- Make use of private repositories |
+- Never change published history |
 
 ---
 
