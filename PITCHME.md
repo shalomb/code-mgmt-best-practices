@@ -1,4 +1,5 @@
 ## Code Management
+
 ##### <span style="font-family:Helvetica Neue; font-weight:bold">A <span style="color:#e49436">Git</span>Pitch Feature Tour</span>
 
 * Best practices
@@ -26,7 +27,7 @@ See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Fragment-Slides) f
 
 Git do's
 
-- Prepare changes in topical branches
+- Prepare changes in topical branches |
 - Commit early/often with small, logical commits |
 - Commit often, perfect later - but publish once |
 - Commit related changes |
