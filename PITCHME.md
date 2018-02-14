@@ -70,7 +70,7 @@ Branches Dont's
 - Treat all infrastructure as code |
 - Allow rollbacks |
 - Use a workflow |
-- is a single branch model the best for your team? *Quite unlikely* |
+- is a single branch model the best for your team? | *Quite unlikely* |
 
 ---
 
@@ -83,7 +83,7 @@ Branches Dont's
 
 ### Versioning
 
-Why? Makes communications easier.
+Why? Makes communications easier. |
 
 Alice: Hi Ted, We noticed a problem in production ... |
 Ted:   Ok, What version are you using? |
