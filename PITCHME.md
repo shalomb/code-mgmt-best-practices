@@ -51,12 +51,14 @@ Branches Do's
 
 Branches Dont's
 
-- Work within the GitLab UI |
-- Work on the master branch instead use a <em>feature</em> branch |
+- Work on the master branch |
+- Why? You should be able to context switch between dev and hotfixing. |
 - Combine multiple unrelated changes into a single commit |
 - Write commit message titles > 50 chars |
 - Never change published history |
 - Change published tags |
+- Work within the GitLab UI |
+- Pull before you push |
 
 ---
 
@@ -140,6 +142,13 @@ Publishing change/change-sets
 +++
 
 <span style="font-size:0.6em; color:gray">User</span>
+
++++?code=src/shell/manifest.yml.ex&lang=yaml
+
+@[2-4](Pinning dependency to a particular commit)
+@[22-28](Elixir with-statement for conciseness)
+@[171-177](Elixir case-statement pattern matching)
+@[179-185](Elixir pipe-mechanism for composing functions)=
 
 - Make use of manifests to lock-down on your dependencies
 
