@@ -171,13 +171,6 @@ The same tool you use to create project **READMEs** and **Wikis** for your Git r
 Step through source code directly within your presentations,
 no more switching back and forth between your slideshow and your IDE!
 
-+++?code=src/elixir/monitor.ex&lang=elixir
-
-@[11-14](Elixir module-attributes as constants)
-@[22-28](Elixir with-statement for conciseness)
-@[171-177](Elixir case-statement pattern matching)
-@[179-185](Elixir pipe-mechanism for composing functions)=
-
 +++
 
 #### Or Present Static Code Blocks
