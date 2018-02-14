@@ -143,9 +143,42 @@ Publishing change/change-sets
 
 <span style="font-size:0.6em; color:gray">User</span>
 
-+++?code=src/shell/manifest.yaml
++++
 
-@[2-7](Pinning dependency to a particular commit)
+```yaml
+- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-set-proxy
+  scm: git
+  version: 2aa7110
+
+- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-py2-bootstrap
+  scm: git
+  version: 3ca8f66
+
+- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-facts
+  scm: git
+  version: 0bd23f5
+
+- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-docker
+  scm: git
+  version: 35c5a69
+
+- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-gitlab
+  scm: git
+  version: 92e0e749
+
+- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-checkmk-docker
+  scm: git
+  version: 132af861
+
+- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-plantuml
+  scm: git
+  version: 34b0437
+```
+
+@[1](Python from..import statement)
+@[3-4](Python dictionary initialization block)
+@[6-7](Python working with time)
+@[9-14](Python for..else statement)
 
 ---
 
