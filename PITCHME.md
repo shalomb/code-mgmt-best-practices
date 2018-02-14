@@ -92,7 +92,7 @@ Many models exist, which to choose for a team requires consideration.
 
 - Can you port groups of related change?
 - Can a hotfix (quick and dirty) be formally backported into next release?
-- Can you forward port a feature-in-development to a hotfix?
+- Can you forward port a feature-in-development to a hotfix? Circumventing QA?
 - Can you manage all of this one one branch?
 - *Unlikely*
 
@@ -115,11 +115,11 @@ Many models exist, which to choose for a team requires consideration.
 ## Branching models ...
 
 - How should branches be named?
-- master
-- develop
-- feature/31-support-api-logging
-- hotfix/42-fix-api-auth
-- release/v1.2.3
+- *master*
+- `develop`
+- _feature/31-support-api-logging_
+- **hotfix/42-fix-api-auth**
+- ``release/v1.2.3``
 
 +++
 
