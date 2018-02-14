@@ -7,6 +7,39 @@
 
 ---
 
+## Slide Fragments
+<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
+
+<span style="font-size:0.6em; color:gray">See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Fragment-Slides) for details.</span>
+
++++
+
+#### Version Control - Branches
+
+<br>
+
+<span style="font-size:0.6em; color:gray">
+See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Fragment-Slides) for details.
+</span>
+
++++
+
+- Prepare changes in topical branches
+- Commit early/often |
+- Commit related changes |
+- Test before you commit - fail early |
+- Test before you merge |
+
++++
+
+WIP: Branches
+
+- Do:    Mark your merge request as a WIP until you're ready to merge
+- Do:    Make use of private repositories |
+- Don't: Never change published history |
+
+---
+
 ## Slideshow Theme Switcher
 <span style="font-size:0.6em; color:gray">Available bottom-left of screen.</span> |
 <span style="font-size:0.6em; color:gray">Start switching themes right now!</span>
