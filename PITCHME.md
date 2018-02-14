@@ -30,11 +30,11 @@ Git do's
 - Prepare changes in topical branches |
 - Commit early/often with small, logical commits |
 - Commit often, perfect later - but publish once |
-- Commit related changes |
 - Commit completed changes |
 - Test before you commit - fail early |
 - Test before you merge |
 - Test after you merge?? |
+- Commit binaries into source code (use Artifactory!! or Swift/Ceph!!) |
 
 +++
 
@@ -51,13 +51,12 @@ Branches Do's
 
 Branches Dont's
 
-- Work within the GitLab UI
-- Work on the master branch instead use a `feature` branch
+- Work within the GitLab UI |
+- Work on the master branch instead use a `feature` branch |
 - Combine multiple unrelated changes into a single commit |
 - Write commit message titles > 50 chars |
 - Never change published history |
 - Change published tags |
-- Commit binaries into source code (use Artifactory!! or Swift/Ceph!!)
 
 ---
 
