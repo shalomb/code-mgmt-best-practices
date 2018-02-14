@@ -86,11 +86,11 @@ Branches Dont's
 
 Why? Makes communications easier.
 
-- Alice: Hi Ted, We noticed a problem in production ... |
+- Alice: Hi Ted, We noticed a problem in production ...
 - Ted:   Ok, What version are you using? |
-- Alice: Version `13619bd` |
-- Ted:   Yea, we had to hotfix that version, please move to `db91631` .. |
-- Pointy-Haired Boss: %*!$£** |
+- Alice: Version *13619bd*|
+- Ted:   Yea, we had to hotfix that version, please move to *db91631* .. |
+- Pointy-Haired Boss: *$£^&* |
 
 +++
 
