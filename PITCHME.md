@@ -147,7 +147,7 @@ Publishing change/change-sets
 
 @[2-7](Pinning dependency to a particular commit)
 
-+++
+---
 
 #### Use GitHub Flavored Markdown
 #### For Slide Content Creation
