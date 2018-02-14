@@ -146,11 +146,6 @@ Publishing change/change-sets
 +++?code=src/shell/manifest.yml.ex&lang=yaml
 
 @[2-4](Pinning dependency to a particular commit)
-@[22-28](Elixir with-statement for conciseness)
-@[171-177](Elixir case-statement pattern matching)
-@[179-185](Elixir pipe-mechanism for composing functions)=
-
-- Make use of manifests to lock-down on your dependencies
 
 +++
 
