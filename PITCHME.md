@@ -17,14 +17,6 @@
 
 ## Version Control - Branches
 
-<br>
-
-<span style="font-size:0.6em; color:gray">
-See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Fragment-Slides) for details.
-</span>
-
-+++
-
 Git do's
 
 - Prepare changes in topical branches |
@@ -145,39 +137,34 @@ Publishing change/change-sets
 
 +++
 
+Example manifest for ansible-galaxy
+
 ```yaml
-- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-set-proxy
+- src: git@gitlab:my-project/module-a
   scm: git
-  version: 2aa7110
+  version: v1.2.3
 
-- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-py2-bootstrap
-  scm: git
-  version: 3ca8f66
+- src: git+http://artifactory/ansible-roles/role-b/
+  version: v3.2.1
 
-- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-facts
-  scm: git
-  version: 0bd23f5
+- src: http://artifactory/ansible-roles/role-b-v1.2.3.zip
 
-- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-docker
+- src: git@gitlab:my-project/module-d
   scm: git
-  version: 35c5a69
+  version: v1.2.3
 
-- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-gitlab
+- src: git@gitlab:my-project/module-e
   scm: git
-  version: 92e0e749
+  version: v1.2.3
 
-- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-checkmk-docker
+- src: git@gitlab:my-project/module-f
   scm: git
-  version: 132af861
-
-- src: git@gitlab.tools.in.pan-net.eu:nfvi-devops/ansible-roles/ansible-plantuml
-  scm: git
-  version: 34b0437
+  version: v1.2.3
 ```
 
-@[1](Python from..import statement)
-@[3-4](Python dictionary initialization block)
-@[6-7](Python working with time)
+@[1](Specify your dependency)
+@[3](Specify the version of the dependency)
+@[5-6](Dependency may come from another source)
 @[9-14](Python for..else statement)
 
 ---
