@@ -14,7 +14,7 @@
 
 +++
 
-#### Version Control - Branches
+## Version Control - Branches
 
 <br>
 
@@ -24,11 +24,16 @@ See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Fragment-Slides) f
 
 +++
 
+Git do's
+
 - Prepare changes in topical branches
-- Commit early/often |
+- Commit early/often with small, logical commits |
+- Commit often, perfect later - but publish once |
 - Commit related changes |
+- Commit completed changes |
 - Test before you commit - fail early |
 - Test before you merge |
+- Test after you merge?? |
 
 +++
 
@@ -36,30 +41,102 @@ Branches Do's
 
 - Use private repositories for features-in-dev/experimental
 - Did you know about https://gitlab.tools.in.pan-net.eu/$username? |
-- Mark your merge request as a WIP until you're ready to merge |
+- Mark your merge request as a WIP: until you're ready to merge |
+- Write nice commit messages |
+- Make use of smart commits |
 
-Branches Do's
++++
 
-- Make use of private repositories |
+Branches Dont's
+
+- Work within the GitLab UI
+- Work on the master branch instead use a `feature` branch
+- Combine multiple unrelated changes into a single commit |
+- Write commit message titles > 50 chars |
 - Never change published history |
+- Change published tags |
+- Commit binaries into source code (use Artifactory!! or Swift/Ceph!!)
 
 ---
 
-## Slideshow Theme Switcher
+## Branching models
+
+- Should support the release management processes
+
+---
+
+## IaaC best practices
+
+- Treat all infrastructure as code
+- Allow rollbacks |
+- Use a workflow
+- is a single branch model the best for your team? *Quite unlikely*
+
 <span style="font-size:0.6em; color:gray">Available bottom-left of screen.</span> |
 <span style="font-size:0.6em; color:gray">Start switching themes right now!</span>
 
 ---
 
-## Tip!
-For best viewing experience press **F** key to go fullscreen.
+## Release management
 
 ---
 
-## Markdown Slides
-<span style="font-size:0.6em; color:gray">Press Down key for details.</span> |
-<span style="font-size:0.6em; color:gray">See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Slide-Markdown) for details.</span>
+### Versioning
 
+Why? Makes communications easier.
+
+Alice: Hi Ted, We noticed a problem in production ...
+Ted:   Ok, What version are you using?
+Alice: Version `13619bd`
+Ted:   Yea, we had to hotfix that version, please move to `db91631` ..
+
+Pointy-Haired Boss: %*!$£** |
+Alice: Ok, but what changed in `db91631` ?? |
+Ted:   I have no time for this .. please `git log db91631` |
+Alice: It says, `overlay-orange#188 Fixing gobbledegook() in the foobar module` |
+Ted:   Yes? And? |
+Alice: Do I need to re-test all my application? Or just the integration? |
+Ted:   How do I know? Does your application make use of `foobar`? |
+Alice: No. |
+Pointy-Haired Boss: %*!$£** |
+
++++
+
+Alice: Hi Ted, We noticed a problem with `service foo v1.2.3` in production ...
+Ted:   I see, but `v1.5.1` is current.
+
+Pointy-Haired Boss: Alice, `v1.5` introduced changes to behaviour X ..
+Alice: I see, OK, We shall try upgrading to `v1.5.1` ..
+
+Pointy-Haired Boss: You will have to upgrade to `v1.4` first ..
+Alice: I see. Thanks!! Wally, please upgrade in TestEnv1 and run a sanity test.
+
+Wally: Done!! Two issues were raised, feature changes were prepared and ready to merge.
+Alice: Ok, please merge them into `develop` and run the full regression test.
+
+Publishing change/change-sets
+
+- Use git tags on the `master` branch
+- Deploy code from a tag.
+- Why? Because `13619bd` means what. `v2.3.456` is better.
+- Especially true if your code has downstream consumers.
+- Recommendation: Make use of [Semantic Versioning 2.0.0](https://semver.org/)
+
++++
+
+<span style="font-size:0.6em; color:gray">Authors</span> |
+
+- Use tags on your `master` branch to signal downstream change.
+- Tags must be of the form `<major-version>.<minor-version>.<patch-version>`.
+- Encourage your users/downstream teams to use your tagged.
+- Know your rollback procedure i.e. `deploy-script --version v1.2.2`
+- Know your hotfix procedure i.e. `git checkout tags/v1.2.3 -b hotfix/broken-api`
+
++++
+
+<span style="font-size:0.6em; color:gray">User</span>
+
+- Make use of manifests to lock-down on your dependencies
 
 +++
 
