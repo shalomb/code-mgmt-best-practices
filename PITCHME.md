@@ -21,6 +21,7 @@ Git do's
 
 - Prepare changes in topical branches |
 - Commit early/often with small, logical commits |
+- Reverts, cherry-picks, etc are simpler - as is testing/intuition.
 - Commit often, perfect later - but publish once |
 - Commit completed changes |
 - Test before you commit - fail early |
@@ -56,12 +57,34 @@ Branches Dont's
 
 ## Branching models
 
+Many exist, which to choose for a team requires consideration.
+
++++
+
 - Should support the release management processes
+
++++
+
 - what are the important phases of the lifecycle?
+
++++
+
 - Can you port groups of related change?
+
++++
+
 - How do you do rollbacks?
+
++++
+
 - How do you do hotfixes?
+
++++
+
 - How should branches be named?
+
++++
+
 - What is the lifecycle of a branch?
 
 ---
