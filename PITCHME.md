@@ -86,15 +86,18 @@ Branches Dont's
 Why? Makes communications easier.
 
 Alice: Hi Ted, We noticed a problem in production ...
-Ted:   Ok, What version are you using?
-Alice: Version `13619bd`
-Ted:   Yea, we had to hotfix that version, please move to `db91631` ..
-
+Ted:   Ok, What version are you using? |
+Alice: Version `13619bd` |
+Ted:   Yea, we had to hotfix that version, please move to `db91631` .. |
 Pointy-Haired Boss: %*!$£** |
-Alice: Ok, but what changed in `db91631` ?? |
+
++++
+
+Alice: Ok, but what changed in `db91631` ??
 Ted:   I have no time for this .. please `git log db91631` |
 Alice: It says, `overlay-orange#188 Fixing gobbledegook() in the foobar module` |
 Ted:   Yes? And? |
+Alice: I have no idea what that means .. |
 Alice: Do I need to re-test all my application? Or just the integration? |
 Ted:   How do I know? Does your application make use of `foobar`? |
 Alice: No. |
