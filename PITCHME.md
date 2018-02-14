@@ -1,5 +1,9 @@
-## The Kitchen Sink
+## Code Management
 ##### <span style="font-family:Helvetica Neue; font-weight:bold">A <span style="color:#e49436">Git</span>Pitch Feature Tour</span>
+
+* Best practices
+* Recommendations
+* Examples
 
 ---
 
@@ -95,7 +99,7 @@ else:
 
 <br>
 
-Enjoy 100% reusable code snippets, excellent syntax highlighting, code indentation and styling. 
+Enjoy 100% reusable code snippets, excellent syntax highlighting, code indentation and styling.
 
 +++?gist=8da53731fd54bab9d5c6
 
@@ -371,7 +375,7 @@ Step through slide content in sequence to slowly reveal the bigger picture.
 <table>
   <tr>
     <th>Firstname</th>
-    <th>Lastname</th> 
+    <th>Lastname</th>
     <th>Age</th>
   </tr>
   <tr>
