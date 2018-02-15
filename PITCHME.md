@@ -6,11 +6,7 @@
 * Recommendations
 * Examples
 
----
-
 ---gist?halberom/82d1280d14d85d04e956
-
----
 
 ## IaC Challenges
 
