@@ -8,6 +8,17 @@
 
 ---
 
+## IaC Challenges
+
+- Strategic requirement to manage infrastructure across
+- Development/hotfix engineering on infrastructure (control VMs, support VMs)
+- Shared workspaces (on control VM) mean risky development
+- Shared workspaces (on control VM) mean risky deployments
+- Changes do not always get merged back
+- Insufficient testing as changes are only validated in a single environment
+
+---
+
 ## Slide Fragments
 <span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
 
@@ -129,7 +140,7 @@ Many models exist, which to choose for a team requires consideration.
 
 ---
 
-## IaaC best practices
+## IaC best practices
 
 - Treat all infrastructure as code |
 - The code is the authority/source of truth |
