@@ -22,11 +22,13 @@ comes from GitHub GISTS.
 Using this simple slide delimiter syntax.
 And rendered <span style="color:#e49436"><i>beautifully</i></span> by GitPitch.
 
----?gist=onetapbeyond/494e0fecaf0d6a2aa2acadfb8eb9d6e8&lang=Scala&title=GIST: Scala Snippet
+---?gist=halberom/82d1280d14d85d04e956&lang=haml&title=Gist: foo
 
 @[25-29](Init Spark cluster data source)
 @[41-53](Build RDD[AWSTask] from source)
 @[57-62](Delegate RDD[AWSTask] to AWS Lambda)
+
+---
 
 ## IaC Challenges
 
