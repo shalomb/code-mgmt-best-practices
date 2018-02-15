@@ -10,7 +10,11 @@
 
 ## IaC Challenges
 
-- Strategic requirement to manage infrastructure across
+- 11 new datacenters
+- Challenges in ensuring consistency across environments
+- Strategic requirement to manage infrastructure as code
+
+
 - Development/hotfix engineering on infrastructure (control VMs, support VMs)
 - Shared workspaces (on control VM) mean risky development
 - Shared workspaces (on control VM) mean risky deployments
