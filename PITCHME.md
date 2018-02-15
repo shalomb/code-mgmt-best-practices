@@ -8,12 +8,17 @@
 
 ---
 
+---gist?halberom/82d1280d14d85d04e956
+
+---
+
 ## IaC Challenges
 
 - 11 new datacenters
 - Challenges in ensuring consistency across environments
 - Strategic requirement to manage infrastructure as code
 
+---
 
 - Development/hotfix engineering on infrastructure (control VMs, support VMs)
 - Shared workspaces (on control VM) mean risky development
@@ -234,29 +239,6 @@ Publishing change/change-sets
 +++
 
 Example manifest for ansible-galaxy
-
-```yaml
-- src: git@gitlab:my-project/module-a
-  scm: git
-  version: v1.2.3
-
-- src: git+http://artifactory/ansible-roles/role-b/
-  version: v3.2.1
-
-- src: http://artifactory/ansible-roles/role-b-v1.2.3.zip
-
-- src: git@gitlab:my-project/module-d
-  scm: git
-  version: v1.2.3
-
-- src: git@gitlab:my-project/module-e
-  scm: git
-  version: v1.2.3
-
-- src: git@gitlab:my-project/module-f
-  scm: git
-  version: v1.2.3
-```
 
 @[1](Specify your dependency)
 @[3](Specify the version of the dependency)
