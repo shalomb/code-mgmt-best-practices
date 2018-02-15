@@ -22,7 +22,7 @@ comes from GitHub GISTS.
 Using this simple slide delimiter syntax.
 And rendered <span style="color:#e49436"><i>beautifully</i></span> by GitPitch.
 
----?gist=halberom/82d1280d14d85d04e956
+---?gist=pmorie/8027518
 
 @[1](Init Spark cluster data source)
 
