@@ -6,7 +6,7 @@
 * Recommendations
 * Examples
 
----
++++
 
 @title[GIST Delimiter]
 
@@ -15,18 +15,20 @@ comes from GitHub GISTS.
 
 <br/>
 
-<span style="color:#e49436">---?gist=gist_id</span>
+<span style="color:#e49436">+++?gist=gist_id</span>
 
 <br/>
 
 Using this simple slide delimiter syntax.
 And rendered <span style="color:#e49436"><i>beautifully</i></span> by GitPitch.
 
----?gist=onetapbeyond/494e0fecaf0d6a2aa2acadfb8eb9d6e8&lang=Scala&title=GIST: Scala Snippet
++++?gist=onetapbeyond/494e0fecaf0d6a2aa2acadfb8eb9d6e8&lang=Scala&title=GIST: Scala Snippet
 
 @[25-29](Init Spark cluster data source)
 @[41-53](Build RDD[AWSTask] from source)
 @[57-62](Delegate RDD[AWSTask] to AWS Lambda)
+
++++
 
 ## IaC Challenges
 
@@ -34,7 +36,7 @@ And rendered <span style="color:#e49436"><i>beautifully</i></span> by GitPitch.
 - Challenges in ensuring consistency across environments
 - Strategic requirement to manage infrastructure as code
 
----
++++
 
 - Development/hotfix engineering on infrastructure (control VMs, support VMs)
 - Shared workspaces (on control VM) mean risky development
@@ -42,7 +44,7 @@ And rendered <span style="color:#e49436"><i>beautifully</i></span> by GitPitch.
 - Changes do not always get merged back
 - Insufficient testing as changes are only validated in a single environment
 
----
++++
 
 ## Slide Fragments
 <span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
@@ -89,7 +91,7 @@ Branches Dont's
 - Work within the GitLab UI |
 - Pull before you push |
 
----
++++
 
 ## Branching models
 
@@ -163,7 +165,7 @@ Many models exist, which to choose for a team requires consideration.
 
 - What is the lifecycle of a branch?
 
----
++++
 
 ## IaC best practices
 
@@ -179,7 +181,7 @@ Many models exist, which to choose for a team requires consideration.
 - is a single branch model the best for your team? |
 - *Quite unlikely* |
 
----
++++
 
 ## Release management
 
@@ -192,7 +194,7 @@ Many models exist, which to choose for a team requires consideration.
 - Deploy from the tag
 - Generate a release notification
 
----
++++
 
 ### Versioning
 
@@ -261,7 +263,7 @@ Example manifest for ansible-galaxy
 @[5-6](Dependency may come from another source)
 @[9-14](Python for..else statement)
 
----
++++
 
 #### Use GitHub Flavored Markdown
 #### For Slide Content Creation
@@ -270,7 +272,7 @@ Example manifest for ansible-galaxy
 
 The same tool you use to create project **READMEs** and **Wikis** for your Git repos.
 
----
++++
 
 ## Code Presenting
 <span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
@@ -317,7 +319,7 @@ else:
 @[6-7](Python working with time)
 @[9-14](Python for..else statement)
 
----
++++
 
 ## GIST Slides
 <span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
@@ -336,7 +338,7 @@ Enjoy 100% reusable code snippets, excellent syntax highlighting, code indentati
 
 +++?gist=28ee3d19ddef9d51b15adbdfe9ed48da
 
----
++++
 
 ## Image Slides
 ## [ Inline ]
@@ -379,7 +381,7 @@ Use inline images to lend a *visual punch* to your slideshow presentations.
 
 <span style="color:gray; font-size:0.5em">the <b>Daftpunktocat-Guy</b> by [jeejkang](https://github.com/jeejkang)</span>
 
----
++++
 
 ## Image Slides
 ## [ Background ]
@@ -399,7 +401,7 @@ Use high-resolution background images for maximum impact.
 +++?image=https://d1z75bzl1vljy2.cloudfront.net/kitchen-sink/127.jpg
 
 
----
++++
 
 ## Video Slides
 ## [ Inline ]
@@ -427,7 +429,7 @@ Embed *YouTube*, *Vimeo*, *MP4* and *WebM* inline on any slide.
 ![MP4 Video](http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4)
 
 
----
++++
 
 ## Video Slides
 ## [ Background ]
@@ -444,7 +446,7 @@ Go fullscreen with *MP4* and *WebM* videos.
 
 +++?video=http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4
 
----
++++
 
 ## Math Notation Slides
 <span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
@@ -491,7 +493,7 @@ Use *TeX*, *LaTeX* and *MathML* markup powered by [MathJax](https://www.mathjax.
 
 This expression `\(\sqrt{3x-1}+(1+x)^2\)` is an example of an inline equation.
 
----
++++
 
 ## Chart Slides
 <span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
@@ -578,7 +580,7 @@ Use *Bar*, *Line*, *Area*, and *Scatter* charts among many other chart types dir
 -->
 </canvas>
 
----
++++
 
 ## Slide Fragments
 <span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
@@ -626,7 +628,7 @@ Step through slide content in sequence to slowly reveal the bigger picture.
   </tr>
 </table>
 
----
++++
 ## <span style="text-transform: none">PITCHME.yaml</span> Settings
 <span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
 <span style="font-size:0.6em; color:gray">See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings) for details.</span>
@@ -648,7 +650,7 @@ Set a default theme, custom logo, custom css, background image, and preferred co
 Enable auto-slide with custom slide intervals, presentation looping, and RTL flow.
 
 
----
++++
 ## Slideshow Keyboard Controls
 <span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
 <span style="font-size:0.6em; color:gray">See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Fullscreen-Mode) for details.</span>
@@ -667,7 +669,7 @@ Enable auto-slide with custom slide intervals, presentation looping, and RTL flo
 | Help | ? |  Esc |
 
 
----
++++
 
 ## GitPitch Social
 <span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
@@ -686,7 +688,7 @@ Enable auto-slide with custom slide intervals, presentation looping, and RTL flo
 - [Print](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Printing) any slideshow as a PDF document
 - [Download and present](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Offline) any slideshow offline
 
----
++++
 
 ## GO FOR IT.
 ## JUST ADD <span style="color:#e49436; text-transform: none">PITCHME.md</span> ;)
