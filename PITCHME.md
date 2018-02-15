@@ -24,9 +24,7 @@ And rendered <span style="color:#e49436"><i>beautifully</i></span> by GitPitch.
 
 ---?gist=halberom/82d1280d14d85d04e956
 
-@[25-29](Init Spark cluster data source)
-@[41-53](Build RDD[AWSTask] from source)
-@[57-62](Delegate RDD[AWSTask] to AWS Lambda)
+@[1](Init Spark cluster data source)
 
 ---
 
