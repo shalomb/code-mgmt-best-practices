@@ -128,6 +128,11 @@ Or this?
 
 - Protect the production/master branch
 - Ensure production/master branch always reflects production state
+
++++
+
+![IaC - CiCd](src/images/cicd-pipeline.png)
+
 - If deployment is found to differ from code, hotfix right away
 - Ensure Merge-Requests are reviewed
 - Recommend all commits are tested
