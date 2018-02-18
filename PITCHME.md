@@ -9,6 +9,16 @@
 
 ## Infrastructure As Code
 
+Is it this?
+
+![IaC - What Is It?](src/images/IaC-WhatIsIt2.jpg)
+
+---
+
+## Infrastructure As Code
+
+Or this?
+
 ![IaC - What Is It?](src/images/IaC-WhatIsIt.jpg)
 
 ---
