@@ -24,8 +24,8 @@
 ![IaaS - CiCd](src/images/cicd-pipeline.png)
 
 - Use of Support/Control VMs to do dev/hotfixing
-- While necessary, completely obviates the review/QA processes
-- Logged on as `dtadmin`
+- Necessary but obviates the review/QA processes
+- Has become the *de-facto* way of working
 
 ---
 
@@ -33,9 +33,9 @@
 
 ![IaaS - CiCd](src/images/cicd-pipeline.png)
 
-- Changes left on Control VMs
-- No committing changes back into git
-- Lost work. Has to be redone later.
+- Logged on as `dtadmin`
+- Changes left on Control VMs, not committed back into git.
+- Lost work. Has to be redone later
 
 ---
 
@@ -45,6 +45,7 @@
 
 - Changes outside of `git` project potentially pulled in to deployment
 - Undesired changes made to environment (production)!!
+- Potentially not noticed, changes baked into environment
 
 ---
 
@@ -52,6 +53,7 @@
 
 ![IaaS - CiCd](src/images/cicd-pipeline.png)
 
+- Logged on as `dtadmin`
 - Commiting straight into the `master` branch
 - OK, but what about review/traceability?
 - Commits made as `dtadmin` user??
@@ -64,7 +66,7 @@
 
 - Multiple engineers sharing the same git workspace
 - One engineer wants to change branch, breaks everybody else
-- Potentially not noticed
+- Potentially not noticed, changes baked into environment
 
 ---
 
@@ -72,9 +74,8 @@
 
 ![IaaS - CiCd](src/images/cicd-pipeline.png)
 
+- Insufficient review
 - Insufficient testing
-
-- Committing straight into the `master` (production) branch
 
 ---
 
