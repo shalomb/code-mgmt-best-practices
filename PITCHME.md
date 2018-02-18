@@ -8,28 +8,28 @@
 
 ---
 
-## Problem
+## IaaS
 
 ![IaaS - CiCd](src/images/cicd-pipeline.png)
 
-- Target of multiple datacenters
-- How do we organize ci/cd to deliver this?
-- Workflows?
-
+- Delivery Target of multiple datacenters
+- What are the current problems?
+- How do we organize CI/CD to deliver this?
 
 ---
 
-## Problem - Hotfixing
+## Problem - Control VM as dev environment
 
 ![IaaS - CiCd](src/images/cicd-pipeline.png)
 
-- Use of Support/Control VMs to do dev/hotfixing
-- Necessary but obviates the review/QA processes
-- Has become the *de-facto* way of working
+- Use of Support/Control VMs to do dev/hotfixing |
+- Change management is not transparent |
+- Has become the *de-facto* way of working |
+- Necessary but obviates the review/QA processes |
 
----
++++
 
-## Problem - Hotfixing
+## Problem - Lost work
 
 ![IaaS - CiCd](src/images/cicd-pipeline.png)
 
@@ -37,9 +37,9 @@
 - Changes left on Control VMs, not committed back into git.
 - Lost work. Has to be redone later
 
----
++++
 
-## Problem - Hotfixing
+## Problem - Undesired state
 
 ![IaaS - CiCd](src/images/cicd-pipeline.png)
 
@@ -47,7 +47,7 @@
 - Undesired changes made to environment (production)!!
 - Potentially not noticed, changes baked into environment
 
----
++++
 
 ## Problem - Hotfixing
 
@@ -58,7 +58,7 @@
 - OK, but what about review/traceability?
 - Commits made as `dtadmin` user??
 
----
++++
 
 ## Problem - Hotfixing
 
@@ -68,7 +68,7 @@
 - One engineer wants to change branch, breaks everybody else
 - Potentially not noticed, changes baked into environment
 
----
++++
 
 ## Problem - Hotfixing
 
@@ -77,7 +77,7 @@
 - Insufficient review
 - Insufficient testing
 
----
++++
 
 ## Problems
 
