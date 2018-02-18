@@ -122,13 +122,15 @@ Or this?
 
 +++
 
-## Problems
+## Recommendations/Remediation
 
-- Use of Support/Control VM to do dev/hotfixing
-- Commiting straight into the `master` branch
-- Multiple engineers sharing the same git workspace
-- Changes not being committed back to git
-- Insufficient testing
+![IaC - CiCd](src/images/cicd-pipeline.png)
+
+- Protect the production/master branch
+- Ensure production/master branch always reflects production state
+- If deployment is found to differ from code, hotfix right away
+- Ensure Merge-Requests are reviewed
+- Recommend all commits are tested
 
 ---
 
