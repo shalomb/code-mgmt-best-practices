@@ -10,10 +10,15 @@
 
 ## Problem
 
+![IaaS - CiCd](src/images/cicd-pipeline.png)
+
 Target of multiple datacenters
 How do we organize ci/cd to deliver this?
+Workflows?
 
-Problems
+---
+
+## Problems
 
 - Use of Support/Control VM to do dev/hotfixing
 - Commiting straight into the `master` branch
