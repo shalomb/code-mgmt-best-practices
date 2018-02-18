@@ -21,7 +21,7 @@ Or this?
 
 ![IaC - What Is It?](src/images/IaC-WhatIsIt.jpg)
 
----
++++
 
 ## Infrastructure As Code
 
