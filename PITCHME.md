@@ -12,9 +12,69 @@
 
 ![IaaS - CiCd](src/images/cicd-pipeline.png)
 
-Target of multiple datacenters
-How do we organize ci/cd to deliver this?
-Workflows?
+- Target of multiple datacenters
+- How do we organize ci/cd to deliver this?
+- Workflows?
+
+
+---
+
+## Problem - Hotfixing
+
+![IaaS - CiCd](src/images/cicd-pipeline.png)
+
+- Use of Support/Control VMs to do dev/hotfixing
+- While necessary, completely obviates the review/QA processes
+- Logged on as `dtadmin`
+
+---
+
+## Problem - Hotfixing
+
+![IaaS - CiCd](src/images/cicd-pipeline.png)
+
+- Changes left on Control VMs
+- No committing changes back into git
+- Lost work. Has to be redone later.
+
+---
+
+## Problem - Hotfixing
+
+![IaaS - CiCd](src/images/cicd-pipeline.png)
+
+- Changes outside of `git` project potentially pulled in to deployment
+- Undesired changes made to environment (production)!!
+
+---
+
+## Problem - Hotfixing
+
+![IaaS - CiCd](src/images/cicd-pipeline.png)
+
+- Commiting straight into the `master` branch
+- OK, but what about review/traceability?
+- Commits made as `dtadmin` user??
+
+---
+
+## Problem - Hotfixing
+
+![IaaS - CiCd](src/images/cicd-pipeline.png)
+
+- Multiple engineers sharing the same git workspace
+- One engineer wants to change branch, breaks everybody else
+- Potentially not noticed
+
+---
+
+## Problem - Hotfixing
+
+![IaaS - CiCd](src/images/cicd-pipeline.png)
+
+- Insufficient testing
+
+- Committing straight into the `master` (production) branch
 
 ---
 
