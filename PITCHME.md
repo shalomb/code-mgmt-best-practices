@@ -8,9 +8,9 @@
 
 ---
 
-## IaaS
+## IaC
 
-![IaaS - CiCd](src/images/cicd-pipeline.png)
+![IaC - CiCd](src/images/cicd-pipeline.png)
 
 - Delivery Target of multiple datacenters
 - What are the current problems?
@@ -18,9 +18,21 @@
 
 ---
 
+## IaC - Generally accepted practices
+
+![IaC - CiCd](src/images/cicd-pipeline.png)
+
+- All deployments must be driven through code
+- All pipeline activities must be transparent
+- Production deployments must be effortless/consistent/automated
+- Delivery pipeline should support a "Fail Fast/Fail Early" strategy
+- All deployments must be repeatable, reliable
+
+---
+
 ## Problem - Control VM as dev environment
 
-![IaaS - CiCd](src/images/cicd-pipeline.png)
+![IaC - CiCd](src/images/cicd-pipeline.png)
 
 - Use of Control VMs to do dev/hotfixing |
 - Change management is not transparent |
@@ -31,38 +43,37 @@
 
 ## Problem - Lost work
 
-![IaaS - CiCd](src/images/cicd-pipeline.png)
+![IaC - CiCd](src/images/cicd-pipeline.png)
 
-- Logged on as `dtadmin`
-- Changes left on Control VMs, not committed back into git.
+- All engineers logged on as the dtadmin user
+- Changes left on Control VMs, not committed back into git
 - Lost work. Has to be redone later
 
 +++
 
 ## Problem - Undesired state
 
-![IaaS - CiCd](src/images/cicd-pipeline.png)
+![IaC - CiCd](src/images/cicd-pipeline.png)
 
-- Changes outside of `git` project potentially pulled in to deployment
-- Undesired changes made to environment (production)!!
+- Undesired changes potentially used by deploy scripts
 - Potentially not noticed, changes baked into environment
 
 +++
 
-## Problem - Hotfixing
+## Problem - Use of master branch
 
-![IaaS - CiCd](src/images/cicd-pipeline.png)
+![IaC - CiCd](src/images/cicd-pipeline.png)
 
-- Logged on as `dtadmin`
-- Commiting straight into the `master` branch
+- Logged on as dtadmin
+- Commiting straight into the master branch
 - OK, but what about review/traceability?
-- Commits made as `dtadmin` user??
+- Commits made as dtadmin user??
 
 +++
 
-## Problem - Hotfixing
+## Problem - Shared workspace
 
-![IaaS - CiCd](src/images/cicd-pipeline.png)
+![IaC - CiCd](src/images/cicd-pipeline.png)
 
 - Multiple engineers sharing the same git workspace
 - One engineer wants to change branch, breaks everybody else
@@ -70,9 +81,9 @@
 
 +++
 
-## Problem - Hotfixing
+## Problem - Insufficient testing
 
-![IaaS - CiCd](src/images/cicd-pipeline.png)
+![IaC - CiCd](src/images/cicd-pipeline.png)
 
 - Insufficient review
 - Insufficient testing
