@@ -55,26 +55,38 @@ Or this?
 
 - Use of Control VMs to do dev/hotfixing |
 - Opaque, Short-circuit to production |
-- Has unfortunately become the de-facto way of working. Not IaC!!!!
+- Has unfortunately become the de-facto way of working. |
+- Not IaC!!!! |
 
 +++
 
 ## Problem - Lost work
 
-![IaC - CiCd](src/images/cicd-pipeline.png)
+![IaC - CiCd](src/images/iac-broken-1.png)
 
-- All engineers logged on as the dtadmin user
-- Changes left on Control VMs, not committed back into git
-- Lost work. Has to be redone later
+- All engineers logged on as the dtadmin user |
+- Changes left on Control VMs, not committed back into git |
+- Lost work. Has to be redone later |
+
++++
+
+## Problem - Shared workspace
+
+![IaC - CiCd](src/images/iac-broken-1.png)
+
+- Multiple engineers sharing the same git workspace |
+- One engineer wants to change branch, breaks everybody else |
+- Potentially not noticed, changes baked into environment |
 
 +++
 
 ## Problem - Undesired state
 
-![IaC - CiCd](src/images/cicd-pipeline.png)
+![IaC - CiCd](src/images/iac-broken-1.png)
 
-- Undesired changes potentially used by deploy scripts
-- Potentially not noticed, changes baked into environment
+- Unhygienic environment on ControlVM |
+- Undesired changes potentially used by deploy scripts |
+- Potentially not noticed, changes baked into environment |
 
 +++
 
@@ -82,20 +94,10 @@ Or this?
 
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
-- Logged on as dtadmin
-- Commiting straight into the master branch
-- OK, but what about review/traceability?
+- Commiting straight into the master branch |
+- Sometime as the dtadmin/root user |
+- OK, but what about review/traceability? |
 - Commits made as dtadmin user??
-
-+++
-
-## Problem - Shared workspace
-
-![IaC - CiCd](src/images/cicd-pipeline.png)
-
-- Multiple engineers sharing the same git workspace
-- One engineer wants to change branch, breaks everybody else
-- Potentially not noticed, changes baked into environment
 
 +++
 
