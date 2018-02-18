@@ -22,9 +22,9 @@
 
 ![IaaS - CiCd](src/images/cicd-pipeline.png)
 
-- Use of Support/Control VMs to do dev/hotfixing |
+- Use of Control VMs to do dev/hotfixing |
 - Change management is not transparent |
-- Has become the *de-facto* way of working |
+- Has become the de-facto way of working |
 - Necessary but obviates the review/QA processes |
 
 +++
