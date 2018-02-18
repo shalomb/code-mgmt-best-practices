@@ -133,16 +133,18 @@ Or this?
 
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
-- If deployment is found to differ from code, hotfix right away |
-- Ensure Merge-Requests are reviewed |
-- Recommend all commits are tested |
+- Use a staging/develop branch to collect MRs |
+- Make this the default branch |
+- Make use of a QA/Test env. for cont. integration/testing |
+- Make use of a staging env. for release readiness |
 
 +++
 
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
-- Ensure changes go through the QA pipeline |
-- Should require lesser need for dtadmin user over time |
+- If deployment is found to differ from code, hotfix right away |
+- Ensure all Merge-Requests are reviewed |
+- Recommend all commits are tested |
 
 +++
 
