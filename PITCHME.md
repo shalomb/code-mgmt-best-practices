@@ -8,7 +8,7 @@
 
 ---
 
-## IaC
+## Infrastructure As Code
 
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
