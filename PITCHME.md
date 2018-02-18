@@ -8,11 +8,18 @@
 
 ---
 
-- Development/hotfix engineering on infrastructure (control VMs, support VMs)
-- Shared workspaces (on control VM) mean risky development
-- Shared workspaces (on control VM) mean risky deployments
-- Changes do not always get merged back
-- Insufficient testing as changes are only validated in a single environment
+## Problem
+
+Target of multiple datacenters
+How do we organize ci/cd to deliver this?
+
+Problems
+
+- Use of Support/Control VM to do dev/hotfixing
+- Commiting straight into the `master` branch
+- Multiple engineers sharing the same git workspace
+- Changes not being committed back to git
+- Insufficient testing
 
 ---
 
