@@ -1,5 +1,5 @@
-## <span style="font-family:Helvetica Neue; font-weight:bold">
-<span style="color:#e49436">Infrastrcuture</span> as Code</span>
+# <span style="font-family:Helvetica Neue; font-weight:bold">
+<span style="color:#e49436">Infrastructure</span> as Code</span>
 
 * Problems
 * Best practices & Recommendations
