@@ -41,13 +41,11 @@ Or this?
 
 ## IaC - Generally accepted practices
 
-![IaC - CiCd](src/images/cicd-pipeline.png)
-
-- All deployments must be driven through code
-- All pipeline activities must be transparent
-- Production deployments must be effortless/consistent/automated
-- Delivery pipeline should support a "Fail Fast/Fail Early" strategy
-- All deployments must be repeatable, reliable
+- All deployments must be driven through code |
+- All pipeline activities must be transparent |
+- Production deployments must be effortless/consistent/automated |
+- Delivery pipeline should support a "Fail Fast/Fail Early" strategy |
+- All deployments must be repeatable, reliable |
 
 ---
 
