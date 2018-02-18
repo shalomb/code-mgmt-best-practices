@@ -51,11 +51,11 @@ Or this?
 
 ## Problem - Dev on ControlVM
 
-![IaC - CiCd](src/images/cicd-pipeline.png)
+![IaC - CiCd](src/images/iac-broken-1.png)
 
 - Use of Control VMs to do dev/hotfixing |
 - Opaque, Short-circuit to production |
-- Has unfortunately become the de-facto way of working |
+- Has unfortunately become the de-facto way of working. Not IaC!!!!
 
 +++
 
