@@ -49,14 +49,14 @@ Or this?
 
 ---
 
-## Problem - Control VM as dev environment
+## Problem - Dev on ControlVM
 
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
 - Use of Control VMs to do dev/hotfixing |
-- Change management is not transparent |
-- Has become the de-facto way of working |
+- Short-circuit to production, Change management is not transparent |
 - Necessary but obviates the review/QA processes |
+- Has become the de-facto way of working |
 
 +++
 
