@@ -1,9 +1,8 @@
-## Code Management
+## <span style="font-family:Helvetica Neue; font-weight:bold">
+<span style="color:#e49436">Infrastrcuture</span> as Code</span>
 
-##### <span style="font-family:Helvetica Neue; font-weight:bold">A <span style="color:#e49436">Git</span>Pitch Feature Tour</span>
-
-* Best practices
-* Recommendations
+* Problems
+* Best practices & Recommendations
 * Examples
 
 ---
