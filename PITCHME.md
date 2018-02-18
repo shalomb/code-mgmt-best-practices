@@ -51,62 +51,65 @@ Or this?
 
 ## Problem - Dev on ControlVM
 
-![IaC - CiCd](src/images/iac-broken-1.png)
+![IaC - Broken](src/images/iac-broken-1.png)
 
 - Use of Control VMs to do dev/hotfixing |
-- Opaque, Short-circuit to production |
 - Has unfortunately become the de-facto way of working. |
-- Not IaC!!!! |
+- Not IaC!!! Opaque, Short-circuit to production |
 
 +++
 
 ## Problem - Lost work
 
-![IaC - CiCd](src/images/iac-broken-1.png)
+![IaC - Broken](src/images/iac-broken-1.png)
 
 - All engineers logged on as the dtadmin user |
 - Changes left on Control VMs, not committed back into git |
 - Lost work. Has to be redone later |
+- Not IaC!!! Repetition |
 
 +++
 
 ## Problem - Shared workspace
 
-![IaC - CiCd](src/images/iac-broken-1.png)
+![IaC - Broken](src/images/iac-broken-1.png)
 
 - Multiple engineers sharing the same git workspace |
 - One engineer wants to change branch, breaks everybody else |
 - Potentially not noticed, changes baked into environment |
+- Not IaC!!! Production state differs from code |
 
 +++
 
 ## Problem - Undesired state
 
-![IaC - CiCd](src/images/iac-broken-1.png)
+![IaC - Broken](src/images/iac-broken-1.png)
 
 - Unhygienic environment on ControlVM |
-- Undesired changes potentially used by deploy scripts |
+- Undesired changes potentially pulled in by deploy scripts |
 - Potentially not noticed, changes baked into environment |
+- Not IaC!!! Production state differs from code |
 
 +++
 
 ## Problem - Use of master branch
 
-![IaC - CiCd](src/images/cicd-pipeline.png)
+![IaC - Broken](src/images/iac-broken-2.png)
 
 - Commiting straight into the master branch |
-- Sometime as the dtadmin/root user |
+- Often as the dtadmin/root user |
 - OK, but what about review/traceability? |
-- Commits made as dtadmin user??
+- Not IaC!!! Circumvents review/QA |
 
 +++
 
 ## Problem - Insufficient testing
 
-![IaC - CiCd](src/images/cicd-pipeline.png)
+![IaC - Broken](src/images/iac-broken-2.png)
 
-- Insufficient review
-- Insufficient testing
+- Insufficient review |
+- Insufficient testing |
+- Not IaC!!! More hotfixing than usual QA-centric delivery |
 
 +++
 
