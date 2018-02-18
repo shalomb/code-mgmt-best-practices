@@ -126,16 +126,31 @@ Or this?
 
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
-- Protect the production/master branch
-- Ensure production/master branch always reflects production state
+- Protect the production/master branch |
+- Ensure production/master branch always reflects production state |
 
 +++
 
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
-- If deployment is found to differ from code, hotfix right away
-- Ensure Merge-Requests are reviewed
-- Recommend all commits are tested
+- If deployment is found to differ from code, hotfix right away |
+- Ensure Merge-Requests are reviewed |
+- Recommend all commits are tested |
+
++++
+
+![IaC - CiCd](src/images/cicd-pipeline.png)
+
+- Ensure changes go through the QA pipeline |
+- Should require lesser need for dtadmin user over time |
+
++++
+
+![IaC - CiCd](src/images/cicd-pipeline.png)
+
+- Publish guidance on use of dtadmin user - use sparingly |
+- Changes to ControlVM should ideally be avoided |
+- Changes to ControlVM should accompany change review |
 
 ---
 
