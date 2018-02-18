@@ -27,6 +27,12 @@ Or this?
 
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
+---
+
+## Infrastructure As Code
+
+![IaC - CiCd](src/images/cicd-pipeline.png)
+
 - Delivery Target of multiple datacenters
 - What are the current problems?
 - How do we organize CI/CD to deliver this?
