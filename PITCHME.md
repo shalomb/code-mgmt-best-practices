@@ -21,7 +21,7 @@ Or this?
 
 ![IaC - What Is It?](src/images/IaC-WhatIsIt.jpg)
 
-+++
+---
 
 ## Infrastructure As Code
 
@@ -37,7 +37,7 @@ Or this?
 - What are the current problems?
 - How do we organize CI/CD to deliver this?
 
----
++++
 
 ## IaC - Generally accepted practices
 
@@ -46,6 +46,15 @@ Or this?
 - Production deployments must be effortless/consistent/automated |
 - Delivery pipeline should support a "Fail Fast/Fail Early" strategy |
 - All deployments must be repeatable, reliable |
+
+---
+
+## Current problems
+
+- We are only beginning IaC journey - problems expected
+- Problems noticed through observation
+- Not everyone contributes to the problems
+- Some problems are not obvious
 
 ---
 
