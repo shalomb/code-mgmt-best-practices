@@ -54,9 +54,8 @@ Or this?
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
 - Use of Control VMs to do dev/hotfixing |
-- Short-circuit to production, Change management is not transparent |
-- Necessary but obviates the review/QA processes |
-- Has become the de-facto way of working |
+- Opaque, Short-circuit to production |
+- Has unfortunately become the de-facto way of working |
 
 +++
 
