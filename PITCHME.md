@@ -13,7 +13,7 @@ Is it this?
 
 ![IaC - What Is It?](src/images/IaC-WhatIsIt2.jpg)
 
----
++++
 
 ## Infrastructure As Code
 
@@ -21,13 +21,13 @@ Or this?
 
 ![IaC - What Is It?](src/images/IaC-WhatIsIt.jpg)
 
----
++++
 
 ## Infrastructure As Code
 
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
----
++++
 
 ## Infrastructure As Code
 
