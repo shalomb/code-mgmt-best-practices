@@ -42,6 +42,7 @@ Or this?
 ## IaC - Generally accepted practices
 
 - All deployments must be driven through code |
+- The code is the authority/source of truth |
 - All pipeline activities must be transparent |
 - Production deployments must be effortless/consistent/automated |
 - Delivery pipeline should support a "Fail Fast/Fail Early" strategy |
@@ -122,7 +123,9 @@ Or this?
 
 +++
 
-## Recommendations/Remediation
+## Recommendations
+
++++
 
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
