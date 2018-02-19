@@ -321,22 +321,24 @@ Many models exist, which to choose for a team requires consideration.
 
 ### Versioning
 
-Why? Facilitates communication about public APIs/releases
-Downstream users know how to react to changes.
-Ensures manifested deployments to environments.
+- Why? Facilitates communication about public APIs/releases
+- Downstream users know how to react to changes.
+- Ensures manifested deployments to environments.
 
 +++
 
 ### Example manifest
 
-    - src: git@gitlab:project-x/module-foo.git
-      scm: git
+```yaml
+- src: git@gitlab:project-x/module-foo.git
+  scm: git
 
-    - src: git@gitlab:project-y/module-bar.git
-      scm: git
+- src: git@gitlab:project-y/module-bar.git
+  scm: git
 
-    - src: git@gitlab:project-z/module-baz.git
-      scm: git
+- src: git@gitlab:project-z/module-baz.git
+  scm: git
+```
 
 - Which branch?
 - Master? Are you sure?
