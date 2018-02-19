@@ -361,23 +361,23 @@ Ensures manifested deployments to environments.
 - OK. This is better.
 - What happens on the next deployment?
 
-@[2](Branch as version)
-@[6](Branch as version)
-@[2,6](Branch as version)
+@[2,6.10](Branch as version)
 
 +++
 
-    - src: git@gitlab:project-x/module-foo.git
-      scm: git
-      version: 15e5f08
+```yaml
+- src: git@gitlab:project-x/module-foo.git
+  version: 15e5f08
+  scm: git
 
-    - src: git@gitlab:project-y/module-bar.git
-      scm: git
-      version: 3a21d57baf60cec60d555b984f740e90c9b0c011
+- src: git@gitlab:project-y/module-bar.git
+  version: 3a21d57baf60cec60d555b984f740e90c9b0c011
+  scm: git
 
-    - src: git@gitlab:project-z/module-baz.git
-      scm: git
-      version: ee474c7347ad7ca30739dd897d6796ecc41e590f
+- src: git@gitlab:project-z/module-baz.git
+  version: ee474c7347ad7ca30739dd897d6796ecc41e590f
+  scm: git
+```
 
 - Much better.
 - Fixed reliable/repeatable deployments achieved.
@@ -385,22 +385,31 @@ Ensures manifested deployments to environments.
 - If you know, do your downstream users know?
 - How do you measure lag?
 
+@[2,6.10](Commit ID as version)
+
 +++
 
-    - src: git@gitlab:project-x/module-foo.git
-      scm: git
-      version: v1.2.3
+```yaml
+- src: git@gitlab:project-x/module-foo.git
+  version: v1.2.3
+  scm: git
 
-    - src: git@gitlab:project-y/module-bar.git
-      scm: git
-      version: v3.5.78
+- src: git@gitlab:project-y/module-bar.git
+  version: v3.5.78
+  scm: git
 
-    - src: git@gitlab:project-z/module-baz.git
-      scm: git
-      version: v0.1.0-alpha1
+- src: git@gitlab:project-z/module-baz.git
+  version: v0.1.0-alpha1
+  scm: git
+```
 
 - Much better.
 - Better transparency
+
+@[2,6.10](Version numbers as version)
+@[4](Version numbers as a well-formed version)
+@[6](Branch as version)
+@[10](Branch as version)
 
 +++
 
