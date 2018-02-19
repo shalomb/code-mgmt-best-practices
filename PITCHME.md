@@ -163,7 +163,7 @@ Or this?
 
 ## Version Control - Branches
 
-![Branch to Env](src/images/branch-env-mapping.png)
+![Branch to Env](src/images/branch-env-mapping-single-branch.png)
 
 +++
 
