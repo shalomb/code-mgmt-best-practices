@@ -163,11 +163,20 @@ Or this?
 
 ## Version Control - Branches
 
-foo
+---
+
+## Problem - Single master branch
 
 ![Branch to Env](src/images/branch-env-mapping-single-branch.png)
 
 +++
+
+---
+
+## Versioning
+
+Why? To communicate changes to your public API
+Downstream users know how to react to your changes
 
 Git do's
 
@@ -312,7 +321,90 @@ Many models exist, which to choose for a team requires consideration.
 
 ### Versioning
 
-Why? Makes communications easier.
+Why? Facilitates communication about public APIs/releases
+Downstream users know how to react to changes.
+Ensures manifested deployments to environments.
+
++++
+
+### Example manifest
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-x/module-foo.git
+      scm: git
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-y/module-bar.git
+      scm: git
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-z/module-baz.git
+      scm: git
+
+- Which branch?
+- Master? Are you sure?
+- What happens on the next deployment?
+
++++
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-x/module-foo.git
+      scm: git
+      version: master
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-y/module-bar.git
+      scm: git
+      version: master
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-z/module-baz.git
+      scm: git
+      version: master
+
+- OK. This is better.
+- What happens on the next deployment?
+
++++
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-x/module-foo.git
+      scm: git
+      version: 15e5f08
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-y/module-bar.git
+      scm: git
+      version: 3a21d57baf60cec60d555b984f740e90c9b0c011
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-z/module-baz.git
+      scm: git
+      version: ee474c7347ad7ca30739dd897d6796ecc41e590f
+
+- Much better.
+- Fixed reliable/repeatable deployments achieved.
+- But!! Which "version" are you using?
+- If you know, do your downstream users know?
+- How do you measure lag?
+
++++
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-x/module-foo.git
+      scm: git
+      version: v1.2.3
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-y/module-bar.git
+      scm: git
+      version: v3.5.78
+
+    - src: git@gitlab.tools.in.pan-net.eu:project-z/module-baz.git
+      scm: git
+      version: v0.1.0-alpha1
+
+- Much better.
+- Better transparency
+
++++
+
+- Use git tags on the `master` branch
+- Deploy code from a tag.
+- Why? Because `13619bd` means what. `v2.3.456` is better.
+- Especially true if your code has downstream consumers.
+- Recommendation: Make use of [Semantic Versioning 2.0.0](https://semver.org/)
+
+---
 
 - Alice: Hi Ted, We noticed a problem in production ... |
 - Ted:   Ok, What version are you using? |
