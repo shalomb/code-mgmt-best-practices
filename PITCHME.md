@@ -179,7 +179,7 @@ Or this?
 
 - Better approach
 - Buffer between internal churn and production/customers
-- But develop/integration branches are typically unstable
+- But develop is typically unstable
 
 +++
 
