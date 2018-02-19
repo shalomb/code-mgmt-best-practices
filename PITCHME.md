@@ -169,7 +169,40 @@ Or this?
 
 ![Branch to Env](src/images/branch-env-mapping-single-branch.png)
 
+- Best intentions but problems still arise.
+- We need to be ready for this.
+- At scale this is problematic
+- Customers can feel the problems and your hotfixing
+
 +++
+
+![Branch to Env](src/images/branch-env-mapping-develop.png)
+
+- Better approach
+- Buffer between internal churn and production/customers
+- But develop/integration branches are typically unstable
+
++++
+
+![Branch to Env](src/images/branch-env-mapping-release.png)
+
+- Even better approach
+- Releases branches can be stabilized in a sandbox
+- Changes are integrated back into iteration
+
++++
+
+![Branch to Env](src/images/branch-env-mapping-hotfix.png)
+
+
+- Hotfixing is done in a sandbox
+- Changes are integrated back into iteration
+
++++
+
+![Branch to Env](src/images/branch-env-mapping.png)
+
+- What we result in
 
 ---
 
@@ -417,11 +450,13 @@ Many models exist, which to choose for a team requires consideration.
 
 +++
 
+## Versioning - Recommendations
+
 - Use git tags on the `master` branch
+- Recommendation: Make use of [Semantic Versioning 2.0.0](https://semver.org/)
 - Deploy code from a tag.
 - Why? Because `13619bd` means what. `v2.3.456` is better.
 - Especially true if your code has downstream consumers.
-- Recommendation: Make use of [Semantic Versioning 2.0.0](https://semver.org/)
 
 ---
 
