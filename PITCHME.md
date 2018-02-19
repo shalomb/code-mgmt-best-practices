@@ -172,7 +172,7 @@ Or this?
 - Best intentions but problems still arise.
 - We need to be ready for this.
 - At scale this is problematic
-- Customers can feel the problems and your hotfixing
+- Customers can feel the problems and your hotfixing activities
 
 +++
 
@@ -193,7 +193,6 @@ Or this?
 +++
 
 ![Branch to Env](src/images/branch-env-mapping-hotfix.png)
-
 
 - Hotfixing is done in a sandbox
 - Changes are integrated back into iteration
