@@ -356,10 +356,10 @@ Ensures manifested deployments to environments.
 - src: git@gitlab:project-z/module-baz.git
   version: master
   scm: git
+```
 
 - OK. This is better.
 - What happens on the next deployment?
-```
 
 +++
 
