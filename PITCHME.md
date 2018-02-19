@@ -43,6 +43,8 @@ Or this?
 
 - All deployments must be driven through code |
 - The code is the authority/source of truth |
+- The code base allows for multiple engineering activities |
+- Dev, Test, Hotfixing - no one activity should be blocked |
 - All pipeline activities must be transparent |
 - Production deployments must be effortless/consistent/automated |
 - Delivery pipeline should support a "Fail Fast/Fail Early" strategy |
@@ -159,14 +161,11 @@ Or this?
 
 ---
 
-## Slide Fragments
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
+## Version Control - Branches
 
-<span style="font-size:0.6em; color:gray">See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Fragment-Slides) for details.</span>
+![Branch to Env](src/images/branch-env-mapping.png)
 
 +++
-
-## Version Control - Branches
 
 Git do's
 
