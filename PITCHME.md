@@ -163,6 +163,8 @@ Or this?
 
 ## Version Control - Branches
 
+foo
+
 ![Branch to Env](src/images/branch-env-mapping-single-branch.png)
 
 +++
