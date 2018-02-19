@@ -329,13 +329,13 @@ Ensures manifested deployments to environments.
 
 ### Example manifest
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-x/module-foo.git
+    - src: git@gitlab:project-x/module-foo.git
       scm: git
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-y/module-bar.git
+    - src: git@gitlab:project-y/module-bar.git
       scm: git
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-z/module-baz.git
+    - src: git@gitlab:project-z/module-baz.git
       scm: git
 
 - Which branch?
@@ -344,15 +344,15 @@ Ensures manifested deployments to environments.
 
 +++
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-x/module-foo.git
+    - src: git@gitlab:project-x/module-foo.git
       scm: git
       version: master
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-y/module-bar.git
+    - src: git@gitlab:project-y/module-bar.git
       scm: git
       version: master
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-z/module-baz.git
+    - src: git@gitlab:project-z/module-baz.git
       scm: git
       version: master
 
@@ -361,15 +361,15 @@ Ensures manifested deployments to environments.
 
 +++
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-x/module-foo.git
+    - src: git@gitlab:project-x/module-foo.git
       scm: git
       version: 15e5f08
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-y/module-bar.git
+    - src: git@gitlab:project-y/module-bar.git
       scm: git
       version: 3a21d57baf60cec60d555b984f740e90c9b0c011
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-z/module-baz.git
+    - src: git@gitlab:project-z/module-baz.git
       scm: git
       version: ee474c7347ad7ca30739dd897d6796ecc41e590f
 
@@ -381,15 +381,15 @@ Ensures manifested deployments to environments.
 
 +++
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-x/module-foo.git
+    - src: git@gitlab:project-x/module-foo.git
       scm: git
       version: v1.2.3
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-y/module-bar.git
+    - src: git@gitlab:project-y/module-bar.git
       scm: git
       version: v3.5.78
 
-    - src: git@gitlab.tools.in.pan-net.eu:project-z/module-baz.git
+    - src: git@gitlab:project-z/module-baz.git
       scm: git
       version: v0.1.0-alpha1
 
