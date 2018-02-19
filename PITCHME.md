@@ -361,7 +361,9 @@ Ensures manifested deployments to environments.
 - OK. This is better.
 - What happens on the next deployment?
 
-@[3](Branch as version)
+@[2](Branch as version)
+@[6](Branch as version)
+@[2,6](Branch as version)
 
 +++
 
