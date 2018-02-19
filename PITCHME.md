@@ -344,20 +344,22 @@ Ensures manifested deployments to environments.
 
 +++
 
-    - src: git@gitlab:project-x/module-foo.git
-      version: master
-      scm: git
+```yaml
+- src: git@gitlab:project-x/module-foo.git
+  version: master
+  scm: git
 
-    - src: git@gitlab:project-y/module-bar.git
-      version: master
-      scm: git
+- src: git@gitlab:project-y/module-bar.git
+  version: master
+  scm: git
 
-    - src: git@gitlab:project-z/module-baz.git
-      version: master
-      scm: git
+- src: git@gitlab:project-z/module-baz.git
+  version: master
+  scm: git
 
 - OK. This is better.
 - What happens on the next deployment?
+```
 
 +++
 
