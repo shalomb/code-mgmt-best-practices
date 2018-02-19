@@ -361,6 +361,8 @@ Ensures manifested deployments to environments.
 - OK. This is better.
 - What happens on the next deployment?
 
+@[3](Branch as version)
+
 +++
 
     - src: git@gitlab:project-x/module-foo.git
