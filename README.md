@@ -1,6 +1,6 @@
-[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/gitpitch/kitchen-sink/master)
+# Code Management Best Practices
 
-# GitPitch - Kitchen Sink
-A slideshow presentation that provides a quick GitPitch feature tour.
+Code management best practices presentation made at PF Campus, February 2018
 
-View the [`raw` **PITCHME.md**](https://raw.githubusercontent.com/gitpitch/kitchen-sink/master/PITCHME.md) markdown to see how each slide in the presentation has been implemented.
+* [View the presentation on gitpitch](https://gitpitch.com/shalomb/code-mgmt-best-practices#/)
+* [View the raw PITCHME.md](PITCHME.md)
