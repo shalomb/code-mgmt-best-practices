@@ -33,9 +33,8 @@ Or this?
 
 ![IaC - CiCd](src/images/cicd-pipeline.png)
 
-- Delivery Target of multiple datacenters
-- What are the current problems?
-- How do we organize CI/CD to deliver this?
+- Delivery Target of multiple environemts/datacenter
+- How do we organize tactics for CI/CD to reach IaC?
 
 +++
 
@@ -43,12 +42,12 @@ Or this?
 
 - All deployments must be driven through code |
 - The code is the authority/source of truth |
+- All deployments must be repeatable, reliable |
 - The code base allows for multiple engineering activities |
 - Dev, Test, Hotfixing - no one activity should be blocked |
 - All pipeline activities must be transparent |
 - Production deployments must be effortless/consistent/automated |
 - Delivery pipeline should support a "Fail Fast/Fail Early" strategy |
-- All deployments must be repeatable, reliable |
 
 ---
 
@@ -201,6 +200,7 @@ Or this?
 ![Branch to Env](src/images/branch-env-mapping.png)
 
 - What we result in
+- Gitflow - https://datasift.github.io/gitflow/IntroducingGitFlow.html
 
 ---
 
@@ -305,8 +305,12 @@ Or this?
 ## Versioning - Recommendations
 
 - Use git tags on the `master` branch
-- Recommendation: Make use of [Semantic Versioning 2.0.0](https://semver.org/)
+- Make use of [Semantic Versioning 2.0.0](https://semver.org/)
 - Deploy code from a tag.
-- Why? Because `13619bd` means what. `v2.3.456` is better.
+- Advertise your deployment!!
 - Especially true if your code has downstream consumers.
+
+---
+
+Questions?
 
